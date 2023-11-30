@@ -17,7 +17,7 @@ function App() {
     <div className="portfolio-app">
       {/* Header */}
       <header>
-        <h1>Your Name</h1>
+        <h1>Gustavo Martinez</h1>
         {/* Navigation */}
         <nav>
           <ul>

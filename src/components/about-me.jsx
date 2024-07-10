@@ -7,16 +7,15 @@ const AboutMe = () => {
     <section id="about">
       <div className="about-content">
         <img
-          src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg"
+          src="https://scontent.ftij2-1.fna.fbcdn.net/v/t1.18169-9/13241225_1134713093237733_9074350898120228842_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=7a1959&_nc_ohc=6vk4kk4mOGoAX82mgcN&_nc_ht=scontent.ftij2-1.fna&oh=00_AfDcurBEKVsjN0aaUlDr3SOYYGlpoPMKloyFSD_JxDqYRg&oe=65C0B8A6"
           alt="Profile"
           className="profile-picture"
         />
         <div className="about-text">
           <h2>About Me</h2>
           <p>
-            Hi there! I'm [Your Name], a passionate software developer on the
-            brink of completing my coding bootcamp. I'm thrilled about the
-            endless possibilities and challenges that the world of coding
+            Hi there! I'm Gustavo, a passionate starter software developer just gradutated from USCD Coding Bootcamp.
+             I'm thrilled about the possibilities and challenges that the world of coding
             offers.
           </p>
           <p>

@@ -1,64 +1,20 @@
-import React, { useState } from 'react';
-import './App.css';
-import AboutMe from './components/about-me';
-import Portfolio from './components/portfolio';
-import Contact from './components/contact';
-import Resume from './components/resume';
-import Footer from './components/footer';
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Page from "./components/Page";
+import { useLocation } from "react-router-dom";
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('about'); // Default section is 'about'
-
-  const handleSectionChange = (section) => {
-    setCurrentSection(section);
-  };
+  const currentPage = useLocation().pathname;
 
   return (
-    <div className="portfolio-app">
-      {/* Header */}
-      <header>
-        <h1>Gustavo Martinez</h1>
-        {/* Navigation */}
-        <nav>
-          <ul>
-            <li
-              className={currentSection === 'about' ? 'active' : ''}
-              onClick={() => handleSectionChange('about')}
-            >
-              About Me
-            </li>
-            <li
-              className={currentSection === 'portfolio' ? 'active' : ''}
-              onClick={() => handleSectionChange('portfolio')}
-            >
-              Portfolio
-            </li>
-            <li
-              className={currentSection === 'contact' ? 'active' : ''}
-              onClick={() => handleSectionChange('contact')}
-            >
-              Contact
-            </li>
-            <li
-              className={currentSection === 'resume' ? 'active' : ''}
-              onClick={() => handleSectionChange('resume')}
-            >
-              Resume
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      {/* Main Content */}
+    <div>
+      <Header>
+        <Nav currentPage={currentPage} />
+      </Header>
       <main>
-        {/* Render different sections based on the current section */}
-        {currentSection === 'about' && <AboutMe />}
-        {currentSection === 'portfolio' && <Portfolio />}
-        {currentSection === 'contact' && <Contact />}
-        {currentSection === 'resume' && <Resume />}
+        <Page currentPage={currentPage} />
       </main>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

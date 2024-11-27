@@ -1,9 +1,10 @@
+import profilePicture from '../../assets/profile/gustavo2016.jpg'
 function About() {
   return (
     <section className="my-5">
       <div className="my-2">
         <div className="profile-img my-5">
-        <i className="fas fa-user-circle" style={{ fontSize: "96px" }}></i>
+          <img src={profilePicture} height='200px' alt="Profile Picture"/>
         </div>
         <p>
             Hi there! I'm Gustavo, a passionate starter software developer just gradutated from USCD Coding Bootcamp.

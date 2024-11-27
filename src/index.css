@@ -302,6 +302,11 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+.profile-img {
+  text-align: center;
+  border-radius: 40%;
+}
+
 .card {
   width: 25%;
   text-align: center;

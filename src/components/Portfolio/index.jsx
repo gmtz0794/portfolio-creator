@@ -6,34 +6,28 @@ function Portfolio() {
   // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
     {
-      name: 'surfReport',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'coolBlog',
+      description: 'Express.js/MySQL',
+      link: "#",
+      repo: "https://github.com/gmtz0794/cool-blog"
     },
     {
-      name: 'pastelPuzzels',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'noteReminder',
+      description: 'HTML/CSS/JavaScript/Node.js',
+      link: "#",
+      repo: "https://github.com/gmtz0794/note-reminder"
     },
     {
-      name: 'runBuddy',
-      description: 'HTML/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'weatherApp',
+      description: 'HTML/CSS/Javascript/API',
+      link: "https://gmtz0794.github.io/weather-app/",
+      repo: "https://github.com/gmtz0794/weather-app"
     },
     {
-      name: 'ledWall',
-      description: 'Node/IoT',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'calculator',
-      description: 'React/JavaScript/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
+      name: 'autoPasswords',
+      description: 'HTML/CSS/JavaScript',
+      link: "https://gmtz0794.github.io/automatic-passwords/",
+      repo: "https://github.com/gmtz0794/automatic-passwords"
     },
   ]);
 
